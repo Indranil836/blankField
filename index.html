@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Field</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                let fname=document.getElementById('fname').value;
+                let lname=document.getElementById('lname').value;
+                if(fname=="" || lname=="")
+                    alert("Please fill up all the fields")
+            })
+        })
+
+    </script>
+
+</head>
+<body>
+    <form>
+        First Name:
+        <input type="text" id="fname"><br><br>
+        Last Name:
+        <input type="text"  id="lname">
+        <br>
+        <br>
+        <button>submit</button>
+    </form>
+
+    
+    
+</body>
+</html>
